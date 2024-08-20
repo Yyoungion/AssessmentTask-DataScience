@@ -10,6 +10,36 @@ original_df = pd.read_csv('Datasets/weatherAUS.csv')
 Sydney_df = pd.read_csv('Datasets/SydneyweatherAUS.csv',
                             header=None,
                             names=['Date', 'Location', 'Rainfall', 'WindSpeed', 'Humidity', 'Temp'])
+eight_df = pd.read_csv('Datasets/YearSydneyAUS/2008.csv',
+                            header=None,
+                            names=['Date', 'Location', 'Rainfall', 'WindSpeed', 'Humidity', 'Temp'])
+nine_df = pd.read_csv('Datasets/YearSydneyAUS/2009.csv',
+                            header=None,
+                            names=['Date', 'Location', 'Rainfall', 'WindSpeed', 'Humidity', 'Temp'])
+ten_df = pd.read_csv('Datasets/YearSydneyAUS/2010.csv',
+                            header=None,
+                            names=['Date', 'Location', 'Rainfall', 'WindSpeed', 'Humidity', 'Temp'])
+eleven_df = pd.read_csv('Datasets/YearSydneyAUS/2011.csv',
+                            header=None,
+                            names=['Date', 'Location', 'Rainfall', 'WindSpeed', 'Humidity', 'Temp'])
+twelve_df = pd.read_csv('Datasets/YearSydneyAUS/2012.csv',
+                            header=None,
+                            names=['Date', 'Location', 'Rainfall', 'WindSpeed', 'Humidity', 'Temp'])
+thirteen_df = pd.read_csv('Datasets/YearSydneyAUS/2013.csv',
+                            header=None,
+                            names=['Date', 'Location', 'Rainfall', 'WindSpeed', 'Humidity', 'Temp'])
+forteen_df = pd.read_csv('Datasets/YearSydneyAUS/2014.csv',
+                            header=None,
+                            names=['Date', 'Location', 'Rainfall', 'WindSpeed', 'Humidity', 'Temp'])
+fifteen_df = pd.read_csv('Datasets/YearSydneyAUS/2015.csv',
+                            header=None,
+                            names=['Date', 'Location', 'Rainfall', 'WindSpeed', 'Humidity', 'Temp'])
+sixteen_df = pd.read_csv('Datasets/YearSydneyAUS/2016.csv',
+                            header=None,
+                            names=['Date', 'Location', 'Rainfall', 'WindSpeed', 'Humidity', 'Temp'])
+seventeen_df = pd.read_csv('Datasets/YearSydneyAUS/2017.csv',
+                            header=None,
+                            names=['Date', 'Location', 'Rainfall', 'WindSpeed', 'Humidity', 'Temp'])
 
 
 #----Define Functions Below----#
@@ -24,7 +54,7 @@ def showRainCharts():
         rain = int(input('Enter the year (2008 - 2017) you want to view: '))
 
         if rain == 2008:
-            Sydney_df.plot(
+            eight_df.plot(
                     kind='bar',
                     x='Date',
                     y='Rainfall',
@@ -35,7 +65,7 @@ def showRainCharts():
             plt.show();
     
         elif rain == 2009:
-            Sydney_df.plot(
+            nine_df.plot(
                     kind='bar',
                     x='Date',
                     y='Rainfall',
@@ -45,7 +75,7 @@ def showRainCharts():
                 
             plt.show();
         elif rain == 2010:
-            Sydney_df.plot(
+            ten_df.plot(
                     kind='bar',
                     x='Date',
                     y='Rainfall',
@@ -56,7 +86,7 @@ def showRainCharts():
             plt.show();
     
         elif rain == 2011:
-            Sydney_df.plot(
+            eleven_df.plot(
                     kind='bar',
                     x='Date',
                     y='Rainfall',
@@ -67,7 +97,7 @@ def showRainCharts():
             plt.show();
     
         elif rain == 2012:
-            Sydney_df.plot(
+            twelve_df.plot(
                     kind='bar',
                     x='Date',
                     y='Rainfall',
@@ -78,7 +108,7 @@ def showRainCharts():
             plt.show();
     
         elif rain == 2013:
-            Sydney_df.plot(
+            thirteen_df.plot(
                     kind='bar',
                     x='Date',
                     y='Rainfall',
@@ -89,7 +119,7 @@ def showRainCharts():
             plt.show();
     
         elif rain == 2014:
-            Sydney_df.plot(
+            forteen_df.plot(
                     kind='bar',
                     x='Date',
                     y='Rainfall',
@@ -100,7 +130,7 @@ def showRainCharts():
             plt.show();
     
         elif rain == 2015:
-            Sydney_df.plot(
+            fifteen_df.plot(
                     kind='bar',
                     x='Date',
                     y='Rainfall',
@@ -110,7 +140,7 @@ def showRainCharts():
             plt.show();
     
         elif rain == 2016:
-            Sydney_df.plot(
+            sixteen_df.plot(
                     kind='bar',
                     x='Date',
                     y='Rainfall',
@@ -121,7 +151,7 @@ def showRainCharts():
             plt.show();
 
         elif rain == 2017:
-            Sydney_df.plot(
+            seventeen_df.plot(
                     kind='bar',
                     x='Date',
                     y='Rainfall',
@@ -142,7 +172,7 @@ def showHumidityCharts():
         hum = int(input('Enter the year (2008 - 2017) you want to view: '))
 
         if hum == 2008:
-            Sydney_df.plot(
+            eight_df.plot(
                     kind='bar',
                     x='Date',
                     y='Humidity',
@@ -153,7 +183,7 @@ def showHumidityCharts():
             plt.show();
     
         elif hum == 2009:
-            Sydney_df.plot(
+            nine_df.plot(
                     kind='bar',
                     x='Date',
                     y='Humidity',
@@ -164,7 +194,7 @@ def showHumidityCharts():
             plt.show();
         
         elif hum == 2010:
-            Sydney_df.plot(
+            ten_df.plot(
                     kind='bar',
                     x='Date',
                     y='Humidity',
@@ -175,7 +205,7 @@ def showHumidityCharts():
             plt.show();
     
         elif hum == 2011:
-            Sydney_df.plot(
+            eleven_df.plot(
                     kind='bar',
                     x='Date',
                     y='Humidity',
@@ -186,7 +216,7 @@ def showHumidityCharts():
             plt.show();
     
         elif hum == 2012:
-            Sydney_df.plot(
+            twelve_df.plot(
                     kind='bar',
                     x='Date',
                     y='Humidity',
@@ -197,7 +227,7 @@ def showHumidityCharts():
             plt.show();
     
         elif hum == 2013:
-            Sydney_df.plot(
+            thirteen_df.plot(
                     kind='bar',
                     x='Date',
                     y='Humidity',
@@ -208,7 +238,7 @@ def showHumidityCharts():
             plt.show();
     
         elif hum == 2014:
-            Sydney_df.plot(
+            forteen_df.plot(
                     kind='bar',
                     x='Date',
                     y='Humidity',
@@ -219,7 +249,7 @@ def showHumidityCharts():
             plt.show();
     
         elif hum == 2015:
-            Sydney_df.plot(
+            fifteen_df.plot(
                     kind='bar',
                     x='Date',
                     y='Humidity',
@@ -229,7 +259,7 @@ def showHumidityCharts():
             plt.show();
     
         elif hum == 2016:
-            Sydney_df.plot(
+            sixteen_df.plot(
                     kind='bar',
                     x='Date',
                     y='Humidity',
@@ -240,7 +270,7 @@ def showHumidityCharts():
             plt.show();
 
         elif hum == 2017:
-            Sydney_df.plot(
+            seventeen_df.plot(
                     kind='bar',
                     x='Date',
                     y='Humidity',
@@ -261,7 +291,7 @@ def showWindSpeedCharts():
         wind = int(input('Enter the year (2008 - 2017) you want to view: '))
 
         if wind == 2008:
-            Sydney_df.plot(
+            eight_df.plot(
                     kind='bar',
                     x='Date',
                     y='WindSpeed',
@@ -272,7 +302,7 @@ def showWindSpeedCharts():
             plt.show();
     
         elif wind == 2009:
-            Sydney_df.plot(
+            nine_df.plot(
                     kind='bar',
                     x='Date',
                     y='WindSpeed',
@@ -283,7 +313,7 @@ def showWindSpeedCharts():
             plt.show();
         
         elif wind == 2010:
-            Sydney_df.plot(
+            ten_df.plot(
                     kind='bar',
                     x='Date',
                     y='WindSpeed',
@@ -294,7 +324,7 @@ def showWindSpeedCharts():
             plt.show();
     
         elif wind == 2011:
-            Sydney_df.plot(
+            eleven_df.plot(
                     kind='bar',
                     x='Date',
                     y='WindSpeed',
@@ -305,7 +335,7 @@ def showWindSpeedCharts():
             plt.show();
     
         elif wind == 2012:
-            Sydney_df.plot(
+            twelve_df.plot(
                     kind='bar',
                     x='Date',
                     y='WindSpeed',
@@ -316,7 +346,7 @@ def showWindSpeedCharts():
             plt.show();
     
         elif wind == 2013:
-            Sydney_df.plot(
+            thirteen_df.plot(
                     kind='bar',
                     x='Date',
                     y='WindSpeed',
@@ -327,7 +357,7 @@ def showWindSpeedCharts():
             plt.show();
     
         elif wind == 2014:
-            Sydney_df.plot(
+            forteen_df.plot(
                     kind='bar',
                     x='Date',
                     y='WindSpeed',
@@ -338,7 +368,7 @@ def showWindSpeedCharts():
             plt.show();
     
         elif wind == 2015:
-            Sydney_df.plot(
+            fifteen_df.plot(
                     kind='bar',
                     x='Date',
                     y='WindSpeed',
@@ -348,7 +378,7 @@ def showWindSpeedCharts():
             plt.show();
     
         elif wind == 2016:
-            Sydney_df.plot(
+            sixteen_df.plot(
                     kind='bar',
                     x='Date',
                     y='WindSpeed',
@@ -359,7 +389,7 @@ def showWindSpeedCharts():
             plt.show();
 
         elif wind == 2017:
-            Sydney_df.plot(
+            seventeen_df.plot(
                     kind='bar',
                     x='Date',
                     y='WindSpeed',
@@ -380,7 +410,7 @@ def showTempCharts():
         temp = int(input('Enter the year (2008 - 2017) you want to view: '))
 
         if temp == 2008:
-            Sydney_df.plot(
+            eight_df.plot(
                     kind='bar',
                     x='Date',
                     y='Temp',
@@ -391,7 +421,7 @@ def showTempCharts():
             plt.show();
     
         elif temp == 2009:
-            Sydney_df.plot(
+            nine_df.plot(
                     kind='bar',
                     x='Date',
                     y='Temp',
@@ -402,7 +432,7 @@ def showTempCharts():
             plt.show();
         
         elif temp == 2010:
-            Sydney_df.plot(
+            ten_df.plot(
                     kind='bar',
                     x='Date',
                     y='Temp',
@@ -413,7 +443,7 @@ def showTempCharts():
             plt.show();
     
         elif temp == 2011:
-            Sydney_df.plot(
+            eleven_df.plot(
                     kind='bar',
                     x='Date',
                     y='Temp',
@@ -424,7 +454,7 @@ def showTempCharts():
             plt.show();
     
         elif temp == 2012:
-            Sydney_df.plot(
+            twelve_df.plot(
                     kind='bar',
                     x='Date',
                     y='Temp',
@@ -435,7 +465,7 @@ def showTempCharts():
             plt.show();
     
         elif temp == 2013:
-            Sydney_df.plot(
+            thirteen_df.plot(
                     kind='bar',
                     x='Date',
                     y='Temp',
@@ -446,7 +476,7 @@ def showTempCharts():
             plt.show();
     
         elif temp == 2014:
-            Sydney_df.plot(
+            forteen_df.plot(
                     kind='bar',
                     x='Date',
                     y='Temp',
@@ -457,7 +487,7 @@ def showTempCharts():
             plt.show();
     
         elif temp == 2015:
-            Sydney_df.plot(
+            fifteen_df.plot(
                     kind='bar',
                     x='Date',
                     y='WindSpeed',
@@ -467,7 +497,7 @@ def showTempCharts():
             plt.show();
     
         elif temp == 2016:
-            Sydney_df.plot(
+            sixteen_df.plot(
                     kind='bar',
                     x='Date',
                     y='Temp',
@@ -478,7 +508,7 @@ def showTempCharts():
             plt.show();
 
         elif temp == 2017:
-            Sydney_df.plot(
+            seventeen_df.plot(
                     kind='bar',
                     x='Date',
                     y='Temp',
