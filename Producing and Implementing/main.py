@@ -7,11 +7,10 @@ quit = False
 
 #----Setup dataframe and query it here prior to creating visualisation and UI functions----#
 original_df = pd.read_csv('Datasets/weatherAUS.csv')
-
-
 Sydney_df = pd.read_csv('Datasets/SydneyweatherAUS.csv',
                             header=None,
-                            names=['Date', 'Location', 'Rainfall', 'WindSpeed3pm', 'Humidity3pm', 'Temp3pm'])
+                            names=['Date', 'Location', 'Rainfall', 'WindSpeed', 'Humidity', 'Temp'])
+
 
 #----Define Functions Below----#
 def showOriginalData():
@@ -31,7 +30,7 @@ def showRainCharts():
                     y='Rainfall',
                     color='blue',
                     alpha=0.3,
-                    title='Rainfall from 2008 to 2017')
+                    title='Rainfall in 2008')
                 
             plt.show();
     
@@ -42,7 +41,7 @@ def showRainCharts():
                     y='Rainfall',
                     color='blue',
                     alpha=0.3,
-                    title='Rainfall from 2008 to 2017')
+                    title='Rainfall in 2009')
                 
             plt.show();
         elif rain == 2010:
@@ -52,7 +51,7 @@ def showRainCharts():
                     y='Rainfall',
                     color='blue',
                     alpha=0.3,
-                    title='Rainfall from 2008 to 2017')
+                    title='Rainfall in 2010')
                 
             plt.show();
     
@@ -63,7 +62,7 @@ def showRainCharts():
                     y='Rainfall',
                     color='blue',
                     alpha=0.3,
-                    title='Rainfall from 2008 to 2017')
+                    title='Rainfall in 2011')
                 
             plt.show();
     
@@ -74,7 +73,7 @@ def showRainCharts():
                     y='Rainfall',
                     color='blue',
                     alpha=0.3,
-                    title='Rainfall from 2008 to 2017')
+                    title='Rainfall in 2012')
                 
             plt.show();
     
@@ -85,7 +84,7 @@ def showRainCharts():
                     y='Rainfall',
                     color='blue',
                     alpha=0.3,
-                    title='Rainfall from 2008 to 2017')
+                    title='Rainfall in 2013')
                 
             plt.show();
     
@@ -96,7 +95,7 @@ def showRainCharts():
                     y='Rainfall',
                     color='blue',
                     alpha=0.3,
-                    title='Rainfall from 2008 to 2017')
+                    title='Rainfall in 2014')
                 
             plt.show();
     
@@ -107,8 +106,7 @@ def showRainCharts():
                     y='Rainfall',
                     color='blue',
                     alpha=0.3,
-                    title='Rainfall from 2008 to 2017')
-                
+                    title='Rainfall in 2015')
             plt.show();
     
         elif rain == 2016:
@@ -118,7 +116,7 @@ def showRainCharts():
                     y='Rainfall',
                     color='blue',
                     alpha=0.3,
-                    title='Rainfall from 2008 to 2017')
+                    title='Rainfall in 2016')
                 
             plt.show();
 
@@ -129,7 +127,7 @@ def showRainCharts():
                     y='Rainfall',
                     color='blue',
                     alpha=0.3,
-                    title='Rainfall from 2008 to 2017')
+                    title='Rainfall in 2017')
                 
             plt.show();
 
@@ -139,6 +137,362 @@ def showRainCharts():
     except:
         print('A year between 2008 and 2017! >:(')
 
+def showHumidityCharts():
+    try:
+        hum = int(input('Enter the year (2008 - 2017) you want to view: '))
+
+        if hum == 2008:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Humidity',
+                    color='blue',
+                    alpha=0.3,
+                    title='Humidity in 2008')
+                
+            plt.show();
+    
+        elif hum == 2009:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Humidity',
+                    color='blue',
+                    alpha=0.3,
+                    title='Humidity in 2009')
+                
+            plt.show();
+        
+        elif hum == 2010:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Humidity',
+                    color='blue',
+                    alpha=0.3,
+                    title='Humidity in 2010')
+                
+            plt.show();
+    
+        elif hum == 2011:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Humidity',
+                    color='blue',
+                    alpha=0.3,
+                    title='Humidity in 2011')
+                
+            plt.show();
+    
+        elif hum == 2012:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Humidity',
+                    color='blue',
+                    alpha=0.3,
+                    title='Humidity in 2012')
+                
+            plt.show();
+    
+        elif hum == 2013:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Humidity',
+                    color='blue',
+                    alpha=0.3,
+                    title='Humidity in 2013')
+                
+            plt.show();
+    
+        elif hum == 2014:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Humidity',
+                    color='blue',
+                    alpha=0.3,
+                    title='Humidity in 2014')
+                
+            plt.show();
+    
+        elif hum == 2015:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Humidity',
+                    color='blue',
+                    alpha=0.3,
+                    title='Humidity in 2015')
+            plt.show();
+    
+        elif hum == 2016:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Humidity',
+                    color='blue',
+                    alpha=0.3,
+                    title='Humidity in 2016')
+                
+            plt.show();
+
+        elif hum == 2017:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Humidity',
+                    color='blue',
+                    alpha=0.3,
+                    title='Humidity in 2017')
+                
+            plt.show();
+
+        else:
+            print('A year between 2008 and 2017! >:(')
+
+    except:
+        print('A year between 2008 and 2017! >:(')
+
+def showWindSpeedCharts():
+    try:
+        wind = int(input('Enter the year (2008 - 2017) you want to view: '))
+
+        if wind == 2008:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='WindSpeed',
+                    color='blue',
+                    alpha=0.3,
+                    title='WindSpeed in 2008')
+                
+            plt.show();
+    
+        elif wind == 2009:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='WindSpeed',
+                    color='blue',
+                    alpha=0.3,
+                    title='WindSpeed in 2009')
+                
+            plt.show();
+        
+        elif wind == 2010:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='WindSpeed',
+                    color='blue',
+                    alpha=0.3,
+                    title='WindSpeed in 2010')
+                
+            plt.show();
+    
+        elif wind == 2011:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='WindSpeed',
+                    color='blue',
+                    alpha=0.3,
+                    title='WindSpeed in 2011')
+                
+            plt.show();
+    
+        elif wind == 2012:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='WindSpeed',
+                    color='blue',
+                    alpha=0.3,
+                    title='WindSpeed in 2012')
+                
+            plt.show();
+    
+        elif wind == 2013:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='WindSpeed',
+                    color='blue',
+                    alpha=0.3,
+                    title='WindSpeed in 2013')
+                
+            plt.show();
+    
+        elif wind == 2014:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='WindSpeed',
+                    color='blue',
+                    alpha=0.3,
+                    title='WindSpeed in 2014')
+                
+            plt.show();
+    
+        elif wind == 2015:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='WindSpeed',
+                    color='blue',
+                    alpha=0.3,
+                    title='WindSpeed in 2015')
+            plt.show();
+    
+        elif wind == 2016:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='WindSpeed',
+                    color='blue',
+                    alpha=0.3,
+                    title='WindSpeed in 2016')
+                
+            plt.show();
+
+        elif wind == 2017:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='WindSpeed',
+                    color='blue',
+                    alpha=0.3,
+                    title='WindSpeed in 2017')
+                
+            plt.show();
+
+        else:
+            print('A year between 2008 and 2017! >:(')
+
+    except:
+        print('A year between 2008 and 2017! >:(')
+
+def showTempCharts():
+    try:
+        temp = int(input('Enter the year (2008 - 2017) you want to view: '))
+
+        if temp == 2008:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Temp',
+                    color='blue',
+                    alpha=0.3,
+                    title='Temperature in 2008')
+                
+            plt.show();
+    
+        elif temp == 2009:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Temp',
+                    color='blue',
+                    alpha=0.3,
+                    title='Temperature in 2009')
+                
+            plt.show();
+        
+        elif temp == 2010:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Temp',
+                    color='blue',
+                    alpha=0.3,
+                    title='Temperature in 2010')
+                
+            plt.show();
+    
+        elif temp == 2011:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Temp',
+                    color='blue',
+                    alpha=0.3,
+                    title='Temperature in 2011')
+                
+            plt.show();
+    
+        elif temp == 2012:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Temp',
+                    color='blue',
+                    alpha=0.3,
+                    title='Temperature in 2012')
+                
+            plt.show();
+    
+        elif temp == 2013:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Temp',
+                    color='blue',
+                    alpha=0.3,
+                    title='Temperature in 2013')
+                
+            plt.show();
+    
+        elif temp == 2014:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Temp',
+                    color='blue',
+                    alpha=0.3,
+                    title='Temperature in 2014')
+                
+            plt.show();
+    
+        elif temp == 2015:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='WindSpeed',
+                    color='blue',
+                    alpha=0.3,
+                    title='Temperature in 2015')
+            plt.show();
+    
+        elif temp == 2016:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Temp',
+                    color='blue',
+                    alpha=0.3,
+                    title='Temperature in 2016')
+                
+            plt.show();
+
+        elif temp == 2017:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Temp',
+                    color='blue',
+                    alpha=0.3,
+                    title='Temperature in 2017')
+                
+            plt.show();
+
+        else:
+            print('A year between 2008 and 2017! >:(')
+
+    except:
+        print('A year between 2008 and 2017! >:(')
 
 def userOptions():  
     global quit
@@ -147,9 +501,12 @@ def userOptions():
           
     Please select an option:
     1 - Show the original dataset
-    2 - Show the updated Data Frame
+    2 - Show the entire Sydney dataset
     3 - Visualise the Rainfall in Sydney
-    4 - Quit Program
+    4 - Visualise the Humidity in Sydney
+    5 - Visualise the Windspeed in Sydney
+    6 - Visualise the Temperature in Sydney
+    7 - Quit Program
         """)
     
     try:
@@ -162,6 +519,12 @@ def userOptions():
         elif choice == 3:
             showRainCharts()
         elif choice == 4:
+            showHumidityCharts()
+        elif choice == 5:
+            showWindSpeedCharts()
+        elif choice == 6:
+            showTempCharts()
+        elif choice == 7:
             quit = True
         else:
             print('A number between 1 and 4, come on!')
