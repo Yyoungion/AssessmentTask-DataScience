@@ -21,16 +21,126 @@ def showUpdatedData():
     print(Sydney_df)
 
 def showRainCharts():
-    Sydney_df.plot(
+    try:
+        rain = int(input('Enter the year (2008 - 2017) you want to view: '))
+
+        if rain == 2008:
+            Sydney_df.plot(
                     kind='bar',
                     x='Date',
                     y='Rainfall',
                     color='blue',
                     alpha=0.3,
                     title='Rainfall from 2008 to 2017')
-    plt.show();
+                
+            plt.show();
+    
+        elif rain == 2009:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Rainfall',
+                    color='blue',
+                    alpha=0.3,
+                    title='Rainfall from 2008 to 2017')
+                
+            plt.show();
+        elif rain == 2010:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Rainfall',
+                    color='blue',
+                    alpha=0.3,
+                    title='Rainfall from 2008 to 2017')
+                
+            plt.show();
+    
+        elif rain == 2011:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Rainfall',
+                    color='blue',
+                    alpha=0.3,
+                    title='Rainfall from 2008 to 2017')
+                
+            plt.show();
+    
+        elif rain == 2012:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Rainfall',
+                    color='blue',
+                    alpha=0.3,
+                    title='Rainfall from 2008 to 2017')
+                
+            plt.show();
+    
+        elif rain == 2013:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Rainfall',
+                    color='blue',
+                    alpha=0.3,
+                    title='Rainfall from 2008 to 2017')
+                
+            plt.show();
+    
+        elif rain == 2014:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Rainfall',
+                    color='blue',
+                    alpha=0.3,
+                    title='Rainfall from 2008 to 2017')
+                
+            plt.show();
+    
+        elif rain == 2015:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Rainfall',
+                    color='blue',
+                    alpha=0.3,
+                    title='Rainfall from 2008 to 2017')
+                
+            plt.show();
+    
+        elif rain == 2016:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Rainfall',
+                    color='blue',
+                    alpha=0.3,
+                    title='Rainfall from 2008 to 2017')
+                
+            plt.show();
 
-def userOptions():
+        elif rain == 2017:
+            Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Rainfall',
+                    color='blue',
+                    alpha=0.3,
+                    title='Rainfall from 2008 to 2017')
+                
+            plt.show();
+
+        else:
+            print('A year between 2008 and 2017! >:(')
+
+    except:
+        print('A year between 2008 and 2017! >:(')
+
+
+def userOptions():  
     global quit
 
     print("""Welcome to the weather data from Sydney!
