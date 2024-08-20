@@ -6,12 +6,12 @@ import matplotlib.pyplot as plt
 quit = False
 
 #----Setup dataframe and query it here prior to creating visualisation and UI functions----#
-original_df = pd.read_csv('Datasets/SydneyweatherAUS.csv')
+original_df = pd.read_csv('Datasets/weatherAUS.csv')
 
 
 Sydney_df = pd.read_csv('Datasets/SydneyweatherAUS.csv',
                             header=None,
-                            names=['Date', 'Location', 'Rainfall', 'Windspeed3pm', 'Humidity3pm', 'Temp3pm'])
+                            names=['Date', 'Location', 'Rainfall', 'WindSpeed3pm', 'Humidity3pm', 'Temp3pm'])
 
 #----Define Functions Below----#
 def showOriginalData():
@@ -21,16 +21,19 @@ def showUpdatedData():
     print(Sydney_df)
 
 def showRainCharts():
-    Sydney_df = Sydney_df.sort_values('date', ascending=True)
-    plt.plot(Sydney_df['Date'], Sydney_df['Rainfall'])
-    plt.xticks(rotation='vertical')
-
-    #plt.show()
+    Sydney_df.plot(
+                    kind='bar',
+                    x='Date',
+                    y='Rainfall',
+                    color='blue',
+                    alpha=0.3,
+                    title='Rainfall from 2008 to 2017')
+    plt.show();
 
 def userOptions():
     global quit
 
-    print("""Welcome to the Big Mac Data Extraordinaire!
+    print("""Welcome to the weather data from Sydney!
           
     Please select an option:
     1 - Show the original dataset
