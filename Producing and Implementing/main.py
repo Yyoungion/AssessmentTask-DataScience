@@ -347,6 +347,7 @@ def showWindSpeedCharts():
                     title='WindSpeed in 2010')
                 
             plt.show();
+            plt.savefig('Results/WindSpeed2010.png')
     
         elif wind == 2011:
             eleven_df.plot(
@@ -358,7 +359,8 @@ def showWindSpeedCharts():
                     title='WindSpeed in 2011')
                 
             plt.show();
-    
+            plt.savefig('Results/WindSpeed2011.png')
+
         elif wind == 2012:
             twelve_df.plot(
                     kind='line',
@@ -369,6 +371,7 @@ def showWindSpeedCharts():
                     title='WindSpeed in 2012')
                 
             plt.show();
+            plt.savefig('Results/WindSpeed2012.png')
     
         elif wind == 2013:
             thirteen_df.plot(
@@ -380,6 +383,7 @@ def showWindSpeedCharts():
                     title='WindSpeed in 2013')
                 
             plt.show();
+            plt.savefig('Results/WindSpeed2013.png')
     
         elif wind == 2014:
             forteen_df.plot(
@@ -391,6 +395,7 @@ def showWindSpeedCharts():
                     title='WindSpeed in 2014')
                 
             plt.show();
+            plt.savefig('Results/WindSpeed2014.png')
     
         elif wind == 2015:
             fifteen_df.plot(
@@ -401,6 +406,7 @@ def showWindSpeedCharts():
                     alpha=0.3,
                     title='WindSpeed in 2015')
             plt.show();
+            plt.savefig('Results/WindSpeed2015.png')
     
         elif wind == 2016:
             sixteen_df.plot(
@@ -412,6 +418,7 @@ def showWindSpeedCharts():
                     title='WindSpeed in 2016')
                 
             plt.show();
+            plt.savefig('Results/WindSpeed2016.png')
 
         elif wind == 2017:
             seventeen_df.plot(
@@ -423,6 +430,7 @@ def showWindSpeedCharts():
                     title='WindSpeed in 2017')
                 
             plt.show();
+            plt.savefig('Results/WindSpeed2017.png')
 
         else:
             print('A year between 2008 and 2017! >:(')
@@ -444,7 +452,8 @@ def showTempCharts():
                     title='Temperature in 2008')    
                 
             plt.show();
-    
+            plt.savefig('Results/Temperature2008.png')
+
         elif temp == 2009:
             nine_df.plot(
                     kind='line',
@@ -455,6 +464,7 @@ def showTempCharts():
                     title='Temperature in 2009')
                 
             plt.show();
+            plt.savefig('Results/Temperature2009.png')
         
         elif temp == 2010:
             ten_df.plot(
@@ -466,6 +476,7 @@ def showTempCharts():
                     title='Temperature in 2010')
                 
             plt.show();
+            plt.savefig('Results/Temperature2010.png')
     
         elif temp == 2011:
             eleven_df.plot(
@@ -477,6 +488,7 @@ def showTempCharts():
                     title='Temperature in 2011')
                 
             plt.show();
+            plt.savefig('Results/Temperature2011.png')
     
         elif temp == 2012:
             twelve_df.plot(
@@ -488,6 +500,7 @@ def showTempCharts():
                     title='Temperature in 2012')
                 
             plt.show();
+            plt.savefig('Results/Temperature2012.png')
     
         elif temp == 2013:
             thirteen_df.plot(
@@ -499,6 +512,7 @@ def showTempCharts():
                     title='Temperature in 2013')
                 
             plt.show();
+            plt.savefig('Results/Temperature2013.png')
     
         elif temp == 2014:
             forteen_df.plot(
@@ -510,6 +524,7 @@ def showTempCharts():
                     title='Temperature in 2014')
                 
             plt.show();
+            plt.savefig('Results/Temperature2014.png')
     
         elif temp == 2015:
             fifteen_df.plot(
@@ -520,6 +535,7 @@ def showTempCharts():
                     alpha=0.3,
                     title='Temperature in 2015')
             plt.show();
+            plt.savefig('Results/Temperature2015.png')
     
         elif temp == 2016:
             sixteen_df.plot(
@@ -531,6 +547,7 @@ def showTempCharts():
                     title='Temperature in 2016')
                 
             plt.show();
+            plt.savefig('Results/Temperature2016.png')
 
         elif temp == 2017:
             seventeen_df.plot(
@@ -542,6 +559,7 @@ def showTempCharts():
                     title='Temperature in 2017')
                 
             plt.show();
+            plt.savefig('Results/Temperature2018.png')
 
         else:
             print('A year between 2008 and 2017! >:(')
