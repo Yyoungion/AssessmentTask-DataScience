@@ -63,6 +63,7 @@ def showRainCharts():
                     title='Rainfall in 2008')
                 
             plt.show();
+            plt.savefig('Results/Rain2008.png')
     
         elif rain == 2009:
             nine_df.plot(
@@ -74,6 +75,8 @@ def showRainCharts():
                     title='Rainfall in 2009')
                 
             plt.show();
+            plt.savefig('Results/Rain2009.png')
+
         elif rain == 2010:
             ten_df.plot(
                     kind='line',
@@ -84,6 +87,7 @@ def showRainCharts():
                     title='Rainfall in 2010')
                 
             plt.show();
+            plt.savefig('Results/Rain20010.png')
     
         elif rain == 2011:
             eleven_df.plot(
@@ -95,6 +99,7 @@ def showRainCharts():
                     title='Rainfall in 2011')
                 
             plt.show();
+            plt.savefig('Results/Rain2011.png')
     
         elif rain == 2012:
             twelve_df.plot(
@@ -106,6 +111,7 @@ def showRainCharts():
                     title='Rainfall in 2012')
                 
             plt.show();
+            plt.savefig('Results/Rain2012.png')
     
         elif rain == 2013:
             thirteen_df.plot(
@@ -117,6 +123,7 @@ def showRainCharts():
                     title='Rainfall in 2013')
                 
             plt.show();
+            plt.savefig('Results/Rain2013.png')
     
         elif rain == 2014:
             forteen_df.plot(
@@ -128,6 +135,7 @@ def showRainCharts():
                     title='Rainfall in 2014')
                 
             plt.show();
+            plt.savefig('Results/Rain2014.png')
     
         elif rain == 2015:
             fifteen_df.plot(
@@ -138,6 +146,7 @@ def showRainCharts():
                     alpha=0.3,
                     title='Rainfall in 2015')
             plt.show();
+            plt.savefig('Results/Rain2015.png')
     
         elif rain == 2016:
             sixteen_df.plot(
@@ -149,6 +158,7 @@ def showRainCharts():
                     title='Rainfall in 2016')
                 
             plt.show();
+            plt.savefig('Results/Rain2016.png')
 
         elif rain == 2017:
             seventeen_df.plot(
@@ -160,6 +170,7 @@ def showRainCharts():
                     title='Rainfall in 2017')
                 
             plt.show();
+            plt.savefig('Results/Rain2017.png')
 
         else:
             print('A year between 2008 and 2017! >:(')
@@ -181,6 +192,7 @@ def showHumidityCharts():
                     title='Humidity in 2008')
                 
             plt.show();
+            plt.savefig('Results/Humidity2008.png')
     
         elif hum == 2009:
             nine_df.plot(
@@ -192,6 +204,7 @@ def showHumidityCharts():
                     title='Humidity in 2009')
                 
             plt.show();
+            plt.savefig('Results/Humidity2009.png')
         
         elif hum == 2010:
             ten_df.plot(
@@ -203,6 +216,7 @@ def showHumidityCharts():
                     title='Humidity in 2010')
                 
             plt.show();
+            plt.savefig('Results/Humidity2010.png')
     
         elif hum == 2011:
             eleven_df.plot(
@@ -214,6 +228,7 @@ def showHumidityCharts():
                     title='Humidity in 2011')
                 
             plt.show();
+            plt.savefig('Results/Humidity2011.png')
     
         elif hum == 2012:
             twelve_df.plot(
@@ -225,6 +240,7 @@ def showHumidityCharts():
                     title='Humidity in 2012')
                 
             plt.show();
+            plt.savefig('Results/Humidity2012.png')
     
         elif hum == 2013:
             thirteen_df.plot(
@@ -236,6 +252,7 @@ def showHumidityCharts():
                     title='Humidity in 2013')
                 
             plt.show();
+            plt.savefig('Results/Humidity2013.png')
     
         elif hum == 2014:
             forteen_df.plot(
@@ -247,6 +264,7 @@ def showHumidityCharts():
                     title='Humidity in 2014')
                 
             plt.show();
+            plt.savefig('Results/Humidity2014.png')
     
         elif hum == 2015:
             fifteen_df.plot(
@@ -256,7 +274,9 @@ def showHumidityCharts():
                     color='blue',
                     alpha=0.3,
                     title='Humidity in 2015')
+            
             plt.show();
+            plt.savefig('Results/Humidity2015.png')
     
         elif hum == 2016:
             sixteen_df.plot(
@@ -268,6 +288,7 @@ def showHumidityCharts():
                     title='Humidity in 2016')
                 
             plt.show();
+            plt.savefig('Results/Humidity2016.png')
 
         elif hum == 2017:
             seventeen_df.plot(
@@ -279,6 +300,7 @@ def showHumidityCharts():
                     title='Humidity in 2017')
                 
             plt.show();
+            plt.savefig('Results/Humidity2017.png')
 
         else:
             print('A year between 2008 and 2017! >:(')
@@ -294,13 +316,14 @@ def showWindSpeedCharts():
             eight_df.plot(
                     kind='line',
                     x='Date',
-                    
+
                     y='WindSpeed',
                     color='blue',
                     alpha=0.3,
                     title='WindSpeed in 2008')
                 
             plt.show();
+            plt.savefig('Results/WindSpeed2008.png')
     
         elif wind == 2009:
             nine_df.plot(
@@ -312,6 +335,7 @@ def showWindSpeedCharts():
                     title='WindSpeed in 2009')
                 
             plt.show();
+            plt.savefig('Results/WindSpeed2009.png')
         
         elif wind == 2010:
             ten_df.plot(
@@ -417,7 +441,7 @@ def showTempCharts():
                     y='Temp',
                     color='blue',
                     alpha=0.3,
-                    title='Temperature in 2008')
+                    title='Temperature in 2008')    
                 
             plt.show();
     
