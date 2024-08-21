@@ -55,7 +55,7 @@ def showRainCharts():
 
         if rain == 2008:
             eight_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Rainfall',
                     color='blue',
@@ -66,7 +66,7 @@ def showRainCharts():
     
         elif rain == 2009:
             nine_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Rainfall',
                     color='blue',
@@ -76,7 +76,7 @@ def showRainCharts():
             plt.show();
         elif rain == 2010:
             ten_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Rainfall',
                     color='blue',
@@ -87,7 +87,7 @@ def showRainCharts():
     
         elif rain == 2011:
             eleven_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Rainfall',
                     color='blue',
@@ -98,7 +98,7 @@ def showRainCharts():
     
         elif rain == 2012:
             twelve_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Rainfall',
                     color='blue',
@@ -109,7 +109,7 @@ def showRainCharts():
     
         elif rain == 2013:
             thirteen_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Rainfall',
                     color='blue',
@@ -120,7 +120,7 @@ def showRainCharts():
     
         elif rain == 2014:
             forteen_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Rainfall',
                     color='blue',
@@ -131,7 +131,7 @@ def showRainCharts():
     
         elif rain == 2015:
             fifteen_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Rainfall',
                     color='blue',
@@ -141,7 +141,7 @@ def showRainCharts():
     
         elif rain == 2016:
             sixteen_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Rainfall',
                     color='blue',
@@ -152,7 +152,7 @@ def showRainCharts():
 
         elif rain == 2017:
             seventeen_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Rainfall',
                     color='blue',
@@ -173,7 +173,7 @@ def showHumidityCharts():
 
         if hum == 2008:
             eight_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Humidity',
                     color='blue',
@@ -184,7 +184,7 @@ def showHumidityCharts():
     
         elif hum == 2009:
             nine_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Humidity',
                     color='blue',
@@ -195,7 +195,7 @@ def showHumidityCharts():
         
         elif hum == 2010:
             ten_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Humidity',
                     color='blue',
@@ -206,7 +206,7 @@ def showHumidityCharts():
     
         elif hum == 2011:
             eleven_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Humidity',
                     color='blue',
@@ -217,7 +217,7 @@ def showHumidityCharts():
     
         elif hum == 2012:
             twelve_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Humidity',
                     color='blue',
@@ -228,7 +228,7 @@ def showHumidityCharts():
     
         elif hum == 2013:
             thirteen_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Humidity',
                     color='blue',
@@ -239,7 +239,7 @@ def showHumidityCharts():
     
         elif hum == 2014:
             forteen_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Humidity',
                     color='blue',
@@ -250,7 +250,7 @@ def showHumidityCharts():
     
         elif hum == 2015:
             fifteen_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Humidity',
                     color='blue',
@@ -260,7 +260,7 @@ def showHumidityCharts():
     
         elif hum == 2016:
             sixteen_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Humidity',
                     color='blue',
@@ -271,7 +271,7 @@ def showHumidityCharts():
 
         elif hum == 2017:
             seventeen_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Humidity',
                     color='blue',
@@ -292,8 +292,9 @@ def showWindSpeedCharts():
 
         if wind == 2008:
             eight_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
+                    
                     y='WindSpeed',
                     color='blue',
                     alpha=0.3,
@@ -303,7 +304,7 @@ def showWindSpeedCharts():
     
         elif wind == 2009:
             nine_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='WindSpeed',
                     color='blue',
@@ -314,7 +315,7 @@ def showWindSpeedCharts():
         
         elif wind == 2010:
             ten_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='WindSpeed',
                     color='blue',
@@ -325,7 +326,7 @@ def showWindSpeedCharts():
     
         elif wind == 2011:
             eleven_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='WindSpeed',
                     color='blue',
@@ -336,7 +337,7 @@ def showWindSpeedCharts():
     
         elif wind == 2012:
             twelve_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='WindSpeed',
                     color='blue',
@@ -347,7 +348,7 @@ def showWindSpeedCharts():
     
         elif wind == 2013:
             thirteen_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='WindSpeed',
                     color='blue',
@@ -358,7 +359,7 @@ def showWindSpeedCharts():
     
         elif wind == 2014:
             forteen_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='WindSpeed',
                     color='blue',
@@ -369,7 +370,7 @@ def showWindSpeedCharts():
     
         elif wind == 2015:
             fifteen_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='WindSpeed',
                     color='blue',
@@ -379,7 +380,7 @@ def showWindSpeedCharts():
     
         elif wind == 2016:
             sixteen_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='WindSpeed',
                     color='blue',
@@ -390,7 +391,7 @@ def showWindSpeedCharts():
 
         elif wind == 2017:
             seventeen_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='WindSpeed',
                     color='blue',
@@ -411,7 +412,7 @@ def showTempCharts():
 
         if temp == 2008:
             eight_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Temp',
                     color='blue',
@@ -422,7 +423,7 @@ def showTempCharts():
     
         elif temp == 2009:
             nine_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Temp',
                     color='blue',
@@ -433,7 +434,7 @@ def showTempCharts():
         
         elif temp == 2010:
             ten_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Temp',
                     color='blue',
@@ -444,7 +445,7 @@ def showTempCharts():
     
         elif temp == 2011:
             eleven_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Temp',
                     color='blue',
@@ -455,7 +456,7 @@ def showTempCharts():
     
         elif temp == 2012:
             twelve_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Temp',
                     color='blue',
@@ -466,7 +467,7 @@ def showTempCharts():
     
         elif temp == 2013:
             thirteen_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Temp',
                     color='blue',
@@ -477,7 +478,7 @@ def showTempCharts():
     
         elif temp == 2014:
             forteen_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Temp',
                     color='blue',
@@ -488,7 +489,7 @@ def showTempCharts():
     
         elif temp == 2015:
             fifteen_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='WindSpeed',
                     color='blue',
@@ -498,7 +499,7 @@ def showTempCharts():
     
         elif temp == 2016:
             sixteen_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Temp',
                     color='blue',
@@ -509,7 +510,7 @@ def showTempCharts():
 
         elif temp == 2017:
             seventeen_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Temp',
                     color='blue',
